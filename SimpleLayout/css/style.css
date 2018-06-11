@@ -1,0 +1,68 @@
+body{
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 100;
+    color: #001e41
+}
+header{
+    width: 100%;
+    padding: 70px 0
+}
+h1, h2{
+    font-weight: 300;
+}
+a{
+    color: #2a4d76
+}
+a:hover{
+    font-weight: 400;
+}
+header h1{
+    text-align: center;
+    color: #ffffff
+}
+header, main{
+    background-color: #2e5481
+}
+main{
+    padding: 55px 0;
+}
+section{
+    padding: 40px 0;
+}
+.container{
+    width: 800px;
+    margin: 0 auto
+}
+#mid-section .content{
+    padding: 0 55px;
+}
+.card::after{
+    clear: both;
+    content: "";
+    display: table
+}
+.card{
+    border-radius: 4px;
+    width: 100%;
+    padding: 55px;
+    background: #ffffff;
+    margin-bottom: 30px
+}
+.card__title{
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+.card__image{
+    font-size: 21px;
+    line-height: 32px;
+    max-width: 40%
+}
+.content__list li{
+    padding: 8px 0
+}
+.pull-right{
+    float: right;
+}
