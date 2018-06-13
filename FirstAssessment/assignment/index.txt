@@ -1,0 +1,35 @@
+<header>
+    <div class="mast">
+        <h1>A creative studio with a different angle on design</h1>
+        <!--about link here-->
+    </div>
+</header>
+
+<section id="showcase">
+    <div class="container">
+        <div class="image__item">
+            <!--image one here-->
+            <div class="image__content">
+                <!--heading here: title - Six flags website-->
+                <!--put a lorem paragraph here-->
+            </div>
+        </div>
+        <div class="image__item">
+            <!--image two here-->
+            <div class="image__content">
+                <!--heading here: title - Cultiv8 Website-->
+                <!--lorem paragraph here-->
+            </div>
+        </div>
+        <div class="large__image clearfix">
+            <div class="col-70">
+                <!--image three here-->
+            </div>
+            <div class="arn">
+                <!--heading here: title - ARN Website-->
+                <!--lorem paragraph here-->
+                <!--Put a button here, make sure it has a class of btn-->
+            </div>
+        </div>
+    </div>
+</section>

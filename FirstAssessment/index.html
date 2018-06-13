@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assessment</title>
 
-    <link href="css/style.css" rel="stylesheet"/>
     <link href="css/prism.css" rel="stylesheet"/>
-    
+    <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
     <section id="intro">
@@ -20,31 +19,132 @@
                     Your challenge should you choose to accept it is to create 
                     a website. You have 1 hour to accomplish this task. Feel free
                     to ask your instructor for help or consult any material that
-                    may be helpful. You may not use any previously done projects
-                    to accomplish this task. When done, open your the results of your
-                    assessment and call your instructor.
+                    may be helpful.
             </p>
-            <p>
-                <strong>Some resources are provided for you on this page and in 
-                    the resources subfolder.
+            <p>You may not use any previously done projects to accomplish this task. When done, open your the results of your assessment and call your instructor.
+                <strong>Some resources and hints are provided for you on this page.
                 </strong>
             </p>
+            <p>Check the boxes as you complete the tasks</p>
         </div>
     </section>
 
     <section id="tasks">
         <div class="container">
             <h2>Tasks</h2>
-            <ul>
+            <ul class="tasks-list">
                 <li>
                     <input type="checkbox" id="check_one">
                     <span class="checkmark"></span>
-                    <label for="check_one">Create a project folder titled <code>first_assessment</code></label>
+                    <label for="check_one">Create a project folder titled <code class="inline">first_assessment</code></label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check_2">
+                    <span class="checkmark"></span>
+                    <label for="check_2">Create two files titled <code class="inline">index.html</code> and <code class="inline">about.html</code>.</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check_3">
+                    <span class="checkmark"></span>
+                    <label for="check_3">Scaffold the pages appropriately and the add the following to the head of both
+                        pages.
+                    </label>
+                    <script type="text/plain" class="language-markup">
+                        <link href="css/style.css" rel="stylesheet"/>
+                    </script>
+                </li>
+                <li>
+                    <input type="checkbox" id="check_4">
+                    <span class="checkmark"></span>
+                    <label for="check_4">Copy out the css and imgs folder in the assigment subfolder and paste it in your project folder.
+                    </label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="check_5">
+                    <span class="checkmark"></span>
+                    <label for="check_5">Look at the <code class="inline">about.txt</code> and <code class="inline">index.txt</code> and paste their contents
+                        in the body of your corresponding html files.
+                    </label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="check_6">
+                    <span class="checkmark"></span>
+                    <label for="check_6">Inside the files look around for comment tags and complete the tasks in them</label>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="check_5">
+                    <span class="checkmark"></span>
+                    <label for="check_5">In the css, look for the line that says <code class="inline">Your css begins here</code>. Complete the tasks that are there.</code></label>
+                </li>
+                
+            </ul>
+            <h2>Hints</h2>
+            <ol>
+                <li>You need to check both the html and css files for comments</li>
+                <li>The css resources provided do not include how to make the rules in actual css so when you see a rule in the resources, you need to ask
+                    or look for how to actually translate them to css.
+                </li>
+                <li>Comment tags look like this - <code class="inline">&lt;!-- comment --&gt;</code> in html and like this - <code class="inline">/* comment */</code> in css.</li>
+            </ol>
+
+            <h2>Tasks Resources</h2>
+            <ul>
+                <li><strong>Resource one</strong>
+                    <script type="text/plain" class="language-markup">
+                        Tilted Square is a Denver web design company 
+                        and creative studio <i>with a different angle on design.</i>
+                    </script>
+                </li>
+                <li><strong>Resource two</strong>
+                    <script type="text/plain" class="language-markup">
+                        We take the time to get to know your organization, its philosophy, 
+                        as well as its goals, all while working to create the most 
+                        effective solutions for your project. Whether you’re looking 
+                        for a long-term strategic partner or need help with a 
+                        small one-off project, Tilted Square is here to help you succeed.
+                    </script>
+                </li>
+
+                <li><strong>Resource three</strong>
+                    <ul>
+                        <li>Text color - <code class="inline">#d4d0cb</code></li>
+                        <li>Background and border color - <code class="inline">#474137</code></li>
+                    </ul>
+                </li>
+
+                <li><strong>Resource four</strong>
+                    <ul>
+                        <li>Float - <code class="inline">right</code></li>
+                        <li>Top margin - <code class="inline">40</code></li>
+                        <li>Font size - <code class="inline">17</code></li>
+                        <li>Color - <code class="inline">#996439</code></li>
+                        <li>Width - <code class="inline">25%</code></li>
+                        <li>Text alignment - <code class="inline">right</code></li>
+                        <li>Line height<code class="inline">1.7</code></li>
+                        <li>Font weight - <code class="inline">100</code></li>
+                    </ul>
                 </li>
             </ul>
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <h1>I wish you good luck</h1>
+            <p>You may click this button below when done.</p>
+            <button type="button" id="callButton" class="button">Done</button>
+        </div>
+    </footer>
     <script src="js/prism.js"></script>
+    <script type="text/javascript">
+    var btn = document.getElementById('callButton');
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Whoa! you are done now. Well done! Let\'s do some JavaScipt together')
+    });
+    </script>
 </body>
 </html>

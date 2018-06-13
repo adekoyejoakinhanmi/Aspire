@@ -39,10 +39,10 @@ ul li input[type="checkbox"]:checked + .checkmark{
     background: #fc4530;
     border: 1px solid #fc4530
 }
-#intro, #tasks{
+#intro, #tasks, footer{
     padding: 40px 0 45px
 }
-#intro{
+#intro, footer{
     background: #000;
     color: #949494
 }
@@ -50,7 +50,52 @@ ul li input[type="checkbox"]:checked + .checkmark{
     color: #fafafa;
     margin: 0;
     font-size: 45px;
+    transition: all 0.2s;
 }
-#intro h1:hover{
+#intro:hover h1{
+    color: #fc4530;
+    cursor: pointer;
+}
+footer h1{
+    color: #fafafa
+}
+code.inline{
+    background: #fafafa;
+    font-family: "consolas";
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 2px;
     color: #fc4530
+}
+.button{
+    box-shadow: none;
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 12px;
+    color: #f9f8f4;
+    border: none;
+    background-color: #fc4530;
+    padding: 14.5px 35px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 1px solid rgba(0, 0, 0, alpha)
+}
+.button:hover{
+    background-color: #e63c29;
+}
+#tasks ul li, #tasks ol li{
+    padding: 5px 0;
+}
+#tasks ul li label{
+    cursor: pointer;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"]{
+    background: #070707;
+}
+code[class*="language-"], pre[class*="language-"]{
+    text-shadow: none;
+    font-size: 16px;
 }
